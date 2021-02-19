@@ -14,7 +14,7 @@ function Home() {
   return (
     <div>
       <Layout>
-        <h1>My {JSON.stringify(data)}</h1>
+        <h1>{data.sayHello}</h1>
       </Layout>
     </div>
   );
