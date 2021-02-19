@@ -62,6 +62,7 @@ const initApolloClient = (initialState = {}) => {
     cache: cache,
     link: new HttpLink({
       uri: 'http://localhost:3000/api/graphql',
+      //uri: 'https://graphqlzero.almansi.me/api',
       headers: {
         'Access-Control-Allow-Origin': true,
       },

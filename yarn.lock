@@ -148,6 +148,18 @@
   resolved "https://registry.npmjs.org/@hapi/hoek/-/hoek-9.1.1.tgz"
   integrity sha512-CAEbWH7OIur6jEOzaai83jq3FmKmv4PmX1JYfs9IrYcGEVI/lyL1EXJGCj7eFVJ0bg5QR8LMxBlEtA+xKiLpFw==
 
+"@leveluptuts/fresh@^0.2.17":
+  version "0.2.17"
+  resolved "https://registry.yarnpkg.com/@leveluptuts/fresh/-/fresh-0.2.17.tgz#8ad5a99a02871d1d3cf2cf7778127e8435f0e41f"
+  integrity sha512-uFwBQNPH0ixvIYi1wxlrIuXKpGRq3yrtIDdDO6oe0/CpTUn1xCOCuW2oMfP/lSP9AoNFSBplgAc62UgmVs/w8Q==
+  dependencies:
+    immer "^7.0.7"
+    react-is "^16.13.1"
+    react-tagsinput "^3.19.0"
+    state "^0.2.0"
+    unquote "^1.1.1"
+    zustand "^3.0.1"
+
 "@material-ui/core@^4.11.3":
   version "4.11.3"
   resolved "https://registry.npmjs.org/@material-ui/core/-/core-4.11.3.tgz"
@@ -2362,6 +2374,11 @@ ignore-walk@^3.0.3:
   dependencies:
     minimatch "^3.0.4"
 
+immer@^7.0.7:
+  version "7.0.15"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-7.0.15.tgz#dc3bc6db87401659d2e737c67a21b227c484a4ad"
+  integrity sha512-yM7jo9+hvYgvdCQdqvhCNRRio0SCXc8xDPzA25SvKWa7b1WVPjLwQs1VYU5JPXjcJPTqAa5NP5dqpORGYBQ2AA==
+
 imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
@@ -3451,6 +3468,11 @@ object.getownpropertydescriptors@^2.1.1:
     define-properties "^1.1.3"
     es-abstract "^1.18.0-next.1"
 
+omicron@~0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/omicron/-/omicron-0.2.0.tgz#5a275c33197c372ae3d96f9369bea1d55d20b175"
+  integrity sha1-WidcMxl8Nyrj2W+Tab6h1V0gsXU=
+
 once@^1.3.0, once@^1.3.1, once@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/once/-/once-1.4.0.tgz"
@@ -3849,7 +3871,7 @@ react-dom@17.0.1:
     object-assign "^4.1.1"
     scheduler "^0.20.1"
 
-react-is@16.13.1, react-is@^16.7.0, "react-is@^16.8.0 || ^17.0.0", react-is@^16.8.1:
+react-is@16.13.1, react-is@^16.13.1, react-is@^16.7.0, "react-is@^16.8.0 || ^17.0.0", react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
@@ -3858,6 +3880,11 @@ react-refresh@0.8.3:
   version "0.8.3"
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.8.3.tgz"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
+
+react-tagsinput@^3.19.0:
+  version "3.19.0"
+  resolved "https://registry.yarnpkg.com/react-tagsinput/-/react-tagsinput-3.19.0.tgz#6e3b45595f2d295d4657bf194491988f948caabf"
+  integrity sha512-ni+/qnZrYrvLg83LtTFHErKy1KQHL0fi0Y6C5jgC1dNUePE9cS/OlQ4XH6JRSjv9GGoeVE0R/ujSBaS1uzCRYQ==
 
 react-transition-group@^4.4.0:
   version "4.4.1"
@@ -4222,6 +4249,13 @@ stacktrace-parser@0.1.10:
   integrity sha512-KJP1OCML99+8fhOHxwwzyWrlUuVX5GQ0ZpJTd1DFXhdkrvg1szxfHhawXUZ3g9TkXORQd4/WG68jMlQZ2p8wlg==
   dependencies:
     type-fest "^0.7.1"
+
+state@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/state/-/state-0.2.0.tgz#df661bdacaafffedd6e0288c87d83e3792d053cd"
+  integrity sha1-32Yb2sqv/+3W4CiMh9g+N5LQU80=
+  dependencies:
+    omicron "~0.2.0"
 
 "statuses@>= 1.3.1 < 2", "statuses@>= 1.5.0 < 2":
   version "1.5.0"
@@ -4594,6 +4628,11 @@ unpipe@1.0.0:
   resolved "https://registry.npmjs.org/unpipe/-/unpipe-1.0.0.tgz"
   integrity sha1-sr9O6FFKrmFltIF4KdIbLvSZBOw=
 
+unquote@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/unquote/-/unquote-1.1.1.tgz#8fded7324ec6e88a0ff8b905e7c098cdc086d544"
+  integrity sha1-j97XMk7G6IoP+LkF58CYzcCG1UQ=
+
 uri-js@^4.2.2:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/uri-js/-/uri-js-4.4.1.tgz#9b1a52595225859e55f669d928f88c6c57f2a77e"
@@ -4802,3 +4841,8 @@ zen-observable@^0.8.0, zen-observable@^0.8.14:
   version "0.8.15"
   resolved "https://registry.npmjs.org/zen-observable/-/zen-observable-0.8.15.tgz"
   integrity sha512-PQ2PC7R9rslx84ndNBZB/Dkv8V8fZEpk83RLgXtYd0fwUgEjseMn1Dgajh2x6S8QbZAFa9p2qVCEuYZNgve0dQ==
+
+zustand@^3.0.1:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/zustand/-/zustand-3.3.2.tgz#0ea066d65ca9c398f48dd82773b8612510e61fc8"
+  integrity sha512-S1CuYmsgQiypCEvKJ6wjkQdMxAOPP+XY0fXLuPYY8BRZF+FvgyuqyEODJTvTasIYx8BMQXIcuMOCoKSwRdLKPw==
