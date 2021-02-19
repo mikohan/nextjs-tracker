@@ -27,6 +27,7 @@ function Home() {
     <div>
       <Layout>
         <h1>Some stuff</h1>
+        <HabitForm />
         <HabitList />
       </Layout>
     </div>
