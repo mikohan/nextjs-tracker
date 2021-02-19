@@ -1,8 +1,9 @@
 import Head from 'next/head';
+import { Container } from '@material-ui/core';
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <Container maxWidth="lg">
       <Head>
         <title>Super test component</title>
         <link rel="icon" href="/favicon.ico" />
@@ -10,7 +11,7 @@ const Layout = ({ children }) => {
       <main>{children}</main>
 
       <footer>Footer</footer>
-    </div>
+    </Container>
   );
 };
 
