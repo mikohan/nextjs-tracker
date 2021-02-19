@@ -12,7 +12,7 @@ export function withApollo(PageComponent) {
     const client = new ApolloClient({
       cache: new InMemoryCache(),
       link: new HttpLink({
-        uri: 'http://localhost:3000/graphql',
+        uri: 'http://localhost:3000/api/graphql',
         headers: {},
       }),
     });
