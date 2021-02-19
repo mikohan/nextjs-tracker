@@ -1,9 +1,17 @@
 import Head from 'next/head';
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
     <div>
-      <Head></Head>
+      <Head>
+        <title>Super test component</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <main>{children}</main>
+
+      <footer>Footer</footer>
     </div>
   );
 };
+
+export default Layout;
