@@ -1,6 +1,8 @@
 import Layout from '~/components/Layout';
+import { withApollo } from '~/lib/apollo';
+import { useQuery } from '@apollo/react-hooks';
 
-export default function Home() {
+function Home() {
   return (
     <div>
       <Layout>
@@ -9,3 +11,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default withApollo(Home);
