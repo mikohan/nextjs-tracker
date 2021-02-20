@@ -3,7 +3,9 @@ import connectDb from '../../lib/mongoose';
 import { mergeResolvers, mergeTypeDefs } from 'graphql-toolkit';
 import { habitsResolvers } from '~/pages/api/habits/resolvers';
 import { habitsMutations } from '~/pages/api/habits/mutations';
-import Habits from '~/pages/api/habits/Habits.graphql';
+const Habits = require('~/pages/api/habits/Habits.graphql');
+
+console.log(process.env.MONGO_URL);
 
 const fakeTypeDefs = gql`
   type Query {
@@ -12,18 +14,18 @@ const fakeTypeDefs = gql`
 `;
 const typeDefs = mergeTypeDefs([fakeTypeDefs, Habits]);
 
-const fakeResolvers = {
+const resolvers = {
   Query: {
     sayHello: () => {
       return 'Hello world!';
     },
   },
 };
-const resolvers = mergeResolvers([
-  fakeResolvers,
-  habitsResolvers,
-  habitsMutations,
-]);
+// const resolvers = mergeResolvers([
+//   fakeResolvers,
+//   habitsResolvers,
+//   habitsMutations,
+// ]);
 
 const apolloServer = new ApolloServer({
   typeDefs,
