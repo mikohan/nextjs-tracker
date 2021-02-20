@@ -3,7 +3,7 @@ import connectDb from '../../lib/mongoose';
 import { mergeResolvers, mergeTypeDefs } from 'graphql-toolkit';
 import { habitsResolvers } from '~/pages/api/habits/resolvers';
 import { habitsMutations } from '~/pages/api/habits/mutations';
-import Habits from '~/pages/api/habits/habits.graphql';
+import Habits from '~/pages/api/habits/Habits.graphql';
 
 const fakeTypeDefs = gql`
   type Query {
