@@ -3,16 +3,16 @@ import connectDb from '../../lib/mongoose';
 import { mergeResolvers, mergeTypeDefs } from 'graphql-toolkit';
 import { habitsResolvers } from '~/pages/api/habits/resolvers';
 import { habitsMutations } from '~/pages/api/habits/mutations';
-const Habits = require('~/pages/api/habits/Habits.graphql');
+// import Habits from '../api/habits/Habits.graphql';
 
 console.log(process.env.MONGO_URL);
 
-const fakeTypeDefs = gql`
+const typeDefs = gql`
   type Query {
     sayHello: String!
   }
 `;
-const typeDefs = mergeTypeDefs([fakeTypeDefs, Habits]);
+// const typeDefs = mergeTypeDefs([fakeTypeDefs]);
 
 const resolvers = {
   Query: {

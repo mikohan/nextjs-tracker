@@ -4,6 +4,11 @@ const webpack = require('webpack');
 module.exports = {
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.plugins.push(new webpack.EnvironmentPlugin(localEnv));
+    config.module.rules.push({
+      test: /\.(graphql|gql)?$/,
+      exclude: /node_modules/,
+      loader: 'graphql-tag/loader',
+    });
     return config;
   },
   typescript: {
