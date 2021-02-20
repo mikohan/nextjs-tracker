@@ -8,7 +8,20 @@ const HabitForm = ({ setHabits }) => {
         setHabits((prevState) => [...prevState, data.habit]);
       }}
     >
-      <Field>Habit</Field>
+      <Field className="inClass">Habit</Field>
+      <style jsx>
+        {`
+          input {
+            width: 100%;
+            border: 2px solid red;
+            border-radius: 4px;
+          }
+
+          .inClass {
+            border: 2px solid blue;
+          }
+        `}
+      </style>
     </Form>
   );
 };

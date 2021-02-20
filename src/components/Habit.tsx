@@ -16,8 +16,9 @@ const Habit = ({ habit, index }) => {
         {`
           article {
             padding: 20px;
-            border-radius: 15px;
-            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 5px;
           }
 
           h3 {
